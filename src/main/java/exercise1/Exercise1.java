@@ -10,7 +10,8 @@ public class Exercise1 {
 		return new BaseSalaryPlusCommissionEmployee(name, baseSalary, commission);
 	}
 
-	public Employee buildWorkHourSalaryEmployee(String name, int hourlyRoute) {
-		return null;
+	public Employee buildWorkHourSalaryEmployee(String name, int hourRate) {
+
+		return new WorkHourSalaryEmployee(name,hourRate);
 	}
 }

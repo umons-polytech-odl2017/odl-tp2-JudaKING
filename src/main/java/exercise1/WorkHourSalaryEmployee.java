@@ -3,7 +3,7 @@ package exercise1;
 public class WorkHourSalaryEmployee extends Employee {
 
 	private int hourRate;
-
+	private int workhour=0;
 
 	public WorkHourSalaryEmployee(String name, int hourRate) {
 		super(name);
@@ -11,7 +11,12 @@ public class WorkHourSalaryEmployee extends Employee {
 	}
 
 	@Override
+	public void workOneHour() {
+		workhour++;
+	}
+
+	@Override
 	public int computeSalary() {
-		return 0;
+		return (workhour*hourRate);
 	}
 }
